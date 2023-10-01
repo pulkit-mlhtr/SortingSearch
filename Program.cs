@@ -6,10 +6,9 @@ namespace CountNumber
 {
     public static class SortedSearch
     {
-
+        //Method finds number of items present in the array lower than input : "lessThan"
         public static int CountNumbers(int[] sortedArray, int lessThan)
-        {                        
-
+        {                       
             return GetCount(sortedArray,lessThan,0,sortedArray.Length-1);
         }
 
@@ -53,7 +52,7 @@ namespace CountNumber
 
         public static void Main(string[] args)
         {
-            //Change input here
+            //Change input here (Note: array should be sorted)
             Console.WriteLine(SortedSearch.CountNumbers(new int[] { 1, 3, 5, 7,8,9,10,11,15,16,18,19 }, 6));
         }
     }
